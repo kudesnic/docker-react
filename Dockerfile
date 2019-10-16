@@ -2,6 +2,8 @@ FROM node:alpine as builder
 
 WORKDIR '/app'
 
+EXPOSE 80/tcp
+
 COPY package.json .
 
 RUN npm install
